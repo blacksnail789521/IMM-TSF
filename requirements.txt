@@ -1,0 +1,11 @@
+torch==2.7.0
+pandas==2.2.3
+scikit-learn==1.6.1
+reformer_pytorch==1.4.4
+stribor==0.1.0
+matplotlib==3.10.3
+seaborn==0.13.2
+geotorch==0.3.0
+transformers==4.51.3
+prettytable==3.16.0
+accelerate==1.6.0

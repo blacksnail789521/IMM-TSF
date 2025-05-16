@@ -1,0 +1,1 @@
+python main_all.py --overwrite_args --gpu "${1:-0}"
