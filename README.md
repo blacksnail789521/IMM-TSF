@@ -49,7 +49,7 @@ Each `{entity_id}` directory represents a unique data unit (e.g., a patient, sen
 
 ## 📥 Download Dataset
 
-Please download the datasets from the following DOI link:
+Please download the datasets from the following link:
 
 > 📎 [https://www.kaggle.com/datasets/blacksnail789521/time-imm/](https://www.kaggle.com/datasets/blacksnail789521/time-imm/)
 
