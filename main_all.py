@@ -12,15 +12,15 @@ from main import get_args_from_parser, trainable
 if __name__ == "__main__":
     """------------------------------------"""
     data_name_list = [
-        # "GDELT",
-        # "RepoHealth",
-        # "MIMIC",
-        # "FNSPID",
-        # "ClusterTrace",
-        # "StudentLife",
-        # "ILINet",
+        "GDELT",
+        "RepoHealth",
+        "MIMIC",
+        "FNSPID",
+        "ClusterTrace",
+        "StudentLife",
+        "ILINet",
         "CESNET",
-        # "EPA-Air",
+        "EPA-Air",
     ]
 
     model_name_list = [
@@ -60,19 +60,7 @@ if __name__ == "__main__":
     # llm_model_fusion = "Llama"
     llm_model_fusion = "DeepSeek"
 
-    llm_layers_fusion = None
-    # llm_layers_fusion = 6
-
-    split_method = "sample"
-    # split_method = "instance"  # only for in-domain transfer learning
-
     tunable_params_path = None
-    # tunable_params_path = Path(
-    #     "exp_settings_and_results",
-    #     "single_granularity",
-    #     model_name,
-    #     f"{data_name}.json",
-    # )
 
     # batch_size = 1
     # batch_size = 2  # 8G
@@ -137,32 +125,16 @@ if __name__ == "__main__":
             "epoch": 1000,
             "enable_text": enable_text,
             "use_text_embeddings": use_text_embeddings,
-            "split_method": split_method,
+            "split_method": "sample",
             "TTF_module": TTF_module,
             "MMF_module": MMF_module,
             "llm_model_fusion": llm_model_fusion,
-            "llm_layers_fusion": llm_layers_fusion,
+            "llm_layers_fusion": None,
         }
 
         # Setup tunable params
         if tunable_params_path is None:
-            tunable_params = {
-                "lr": 1e-3,
-                # "lr": 1e-4,
-                "rec_ids": [
-                    "10.0.178.41",
-                    "router-1902",
-                    "10.0.64.221",
-                    "server-1245",
-                    "firewall-3127",
-                    "router-7669",
-                    "10.0.212.206",
-                    "10.0.31.13",
-                    "10.0.90.172",
-                    "switch-9995",
-                    "firewall-8704",
-                ],  # TODO: CESNET
-            }
+            tunable_params = {"lr": 1e-3}
 
         # Create result directory if it doesn't exist
         results_dir = Path("experiment_results")

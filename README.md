@@ -51,7 +51,7 @@ Each `{entity_id}` directory represents a unique data unit (e.g., a patient, sen
 
 Please download the datasets from the following DOI link:
 
-> 📎 [https://doi.org/10.7910/DVN/EPWVWX](https://doi.org/10.7910/DVN/EPWVWX)
+> 📎 [https://www.kaggle.com/datasets/blacksnail789521/time-imm/](https://www.kaggle.com/datasets/blacksnail789521/time-imm/)
 
 After downloading, extract the files and place them under the appropriate folder within the `data/` directory, following the hierarchy above.
 
@@ -127,6 +127,7 @@ python compute_text_embeddings.py
 
 * This stores `text_embeddings_xxx.pt` under each `processed/{entity_id}/` folder.
 * To use the precomputed embeddings, add `--use_text_embeddings True` when running `main.py`.
+> **Note:** Please make sure you have at least **24GB total GPU RAM** to run **LLaMA 3.1** and **DeepSeek** models.
 
 ---
 
@@ -144,13 +145,11 @@ This automates evaluation across all supported configurations.
 
 ## 🔄 MIMIC Preprocessing
 
-Due to access restrictions, raw MIMIC data must be downloaded manually. Once you have the CSV files, place them under:
+Due to access restrictions, raw MIMIC data must be downloaded manually. Please follow the instruction here:
 
 ```
-data/MIMIC/raw/
+data/MIMIC/mimic_preprocess.ipynb
 ```
-
-Then run `mimic_preprocess.ipynb` from the dataverse.
 
 This will generate processed files in:
 
