@@ -1,13 +1,13 @@
-# IMMTSF Benchmark Library
+# IMM-TSF Benchmark Library
 
-Welcome to the **IMMTSF** benchmark library, part of the Time-IMM dataset collection for NeurIPS 2025 Datasets & Benchmarks Track. This repository provides tools for loading irregular, multimodal time-series data and running reproducible forecasting benchmarks.
+Welcome to the **IMM-TSF** benchmark library, part of the Time-IMM dataset collection for NeurIPS 2025 Datasets & Benchmarks Track. This repository provides tools for loading irregular, multimodal time-series data and running reproducible forecasting benchmarks.
 
 ---
 
 ## 📦 Repository Structure
 
 ```
-IMMTSF/                     
+IMM-TSF/                     
 ├── data/                   # Place your datasets here (raw and processed)
 ├── fusions/                # Fusion model implementations
 ├── layers/                 # Attention, correlation, and transformer layers
@@ -49,9 +49,9 @@ Each `{entity_id}` directory represents a unique data unit (e.g., a patient, sen
 
 ## 📥 Download Dataset
 
-Please download the datasets from the following link:
-
-> 📎 [https://www.kaggle.com/datasets/blacksnail789521/time-imm/](https://www.kaggle.com/datasets/blacksnail789521/time-imm/)
+Please download the datasets from one of the following sources:
+* 💻 **GitHub Repository:** [https://github.com/blacksnail789521/Time-IMM](https://github.com/blacksnail789521/Time-IMM)
+* 📎 **Kaggle Dataset:** [https://www.kaggle.com/datasets/blacksnail789521/time-imm](https://www.kaggle.com/datasets/blacksnail789521/time-imm)
 
 After downloading, extract the files and place them under the appropriate folder within the `data/` directory, following the hierarchy above.
 
@@ -62,8 +62,8 @@ After downloading, extract the files and place them under the appropriate folder
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-org/IMMTSF.git
-   cd IMMTSF
+   git clone https://github.com/your-org/IMM-TSF.git
+   cd IMM-TSF
    ```
 
 2. (Recommended) Create and activate a **conda** environment:
