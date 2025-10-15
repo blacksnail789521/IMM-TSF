@@ -1,7 +1,7 @@
 # IMM-TSF Benchmark Library
 
 [![arXiv](https://img.shields.io/badge/arXiv-2506.10412-b31b1b.svg)](https://arxiv.org/abs/2506.10412)
-[![GitHub Stars](https://img.shields.io/github/stars/blacksnail789521/Time-IMM?style=social)](https://github.com/blacksnail789521/Time-IMM/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/blacksnail789521/IMM-TSF?style=social)](https://github.com/blacksnail789521/IMM-TSF/stargazers)
 [![](https://img.shields.io/badge/Project-Website-blue?style=flat)](https://blacksnail789521.github.io/time-imm-project-page/)
 [![How to Cite](https://img.shields.io/badge/Cite-bibtex-orange)](#citation)
 
